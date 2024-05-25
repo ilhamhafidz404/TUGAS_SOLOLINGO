@@ -23,10 +23,11 @@
         <img src="https://d35aaqx5ub95lt.cloudfront.net/vendor/ca9178510134b4b0893dbac30b6670aa.svg" width="32" height="32">
         <span class="text-xl font-semibold text-gray-600">Papan Skor</span>
       </a>
-      <a href="" class="flex items-center gap-5 hover:bg-gray-100 px-5 py-3 rounded-md mb-2">
-        <img src="https://www.flaticon.com/free-icon/settings_2698011?term=setting&page=1&position=17&origin=search&related_id=2698011" width="32" height="32">
-        <span class="text-xl font-semibold text-gray-600">Setting</span>
-      </a>
+      <form action="/logout" method="POST">
+        <button class="flex items-center gap-5 hover:bg-gray-100 px-5 py-3 rounded-md mb-2">
+          <span class="text-xl font-semibold text-gray-600">Logout</span>
+        </button>
+      </form>
     </aside>
     <div></div>
     <main class="col-span-3 p-10">

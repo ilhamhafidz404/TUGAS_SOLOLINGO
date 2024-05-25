@@ -1,0 +1,161 @@
+ERROR - 2024-05-25 13:43:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\Quiz\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\laragon\www\Quiz\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'sololingo', 3306, '', 0)
+#1 C:\laragon\www\Quiz\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Quiz\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Quiz\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Quiz\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Quiz\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Quiz\app\Controllers\DashboardController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Quiz\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#8 C:\laragon\www\Quiz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#9 C:\laragon\www\Quiz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Quiz\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Quiz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\Quiz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\laragon\www\Quiz\system\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\Quiz\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\Quiz\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Quiz\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Quiz\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\Quiz\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\Quiz\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\Quiz\app\Controllers\DashboardController.php(21): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\Quiz\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\laragon\www\Quiz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\laragon\www\Quiz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Quiz\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\Quiz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\Quiz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\laragon\www\Quiz\system\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-05-25 13:43:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `courses`', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+ERROR - 2024-05-25 13:44:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\Quiz\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\laragon\www\Quiz\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'sololingo', 3306, '', 0)
+#1 C:\laragon\www\Quiz\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Quiz\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Quiz\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Quiz\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Quiz\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Quiz\app\Controllers\DashboardController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Quiz\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#8 C:\laragon\www\Quiz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#9 C:\laragon\www\Quiz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Quiz\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Quiz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\Quiz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\laragon\www\Quiz\system\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\Quiz\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\Quiz\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Quiz\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Quiz\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\Quiz\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\Quiz\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\Quiz\app\Controllers\DashboardController.php(21): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\Quiz\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 C:\laragon\www\Quiz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\laragon\www\Quiz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Quiz\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\Quiz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\Quiz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\laragon\www\Quiz\system\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-05-25 13:44:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `courses`', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DashboardController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-25 13:44:46 --> ErrorException: Undefined variable $courses
+[Method: GET, Route: dashboard]
+in APPPATH\Views\DashboardView.php on line 39.
+ 1 APPPATH\Views\DashboardView.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $courses', 'C:\\laragon\\www\\Quiz\\app\\Views\\DashboardView.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\Quiz\\app\\Views\\DashboardView.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('DashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('DashboardView')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-25 14:05:04 --> ErrorException: Undefined array key "users"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 28.
+ 1 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'C:\\laragon\\www\\Quiz\\app\\Controllers\\AuthController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-25 14:06:11 --> ErrorException: Undefined array key "user_id"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 29.
+ 1 APPPATH\Controllers\AuthController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\laragon\\www\\Quiz\\app\\Controllers\\AuthController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-25 14:06:18 --> ErrorException: Undefined array key "user_id"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 29.
+ 1 APPPATH\Controllers\AuthController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\laragon\\www\\Quiz\\app\\Controllers\\AuthController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-25 14:06:28 --> ErrorException: Undefined array key "user_id"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 29.
+ 1 APPPATH\Controllers\AuthController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\laragon\\www\\Quiz\\app\\Controllers\\AuthController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')

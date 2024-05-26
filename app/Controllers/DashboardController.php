@@ -13,6 +13,6 @@ class DashboardController extends BaseController
 
         $data['courses'] = $courses->findAll();
 
-        return view("DashboardView", $data);
+        return view("student/DashboardView", $data);
     }
 }

@@ -27,10 +27,16 @@ class User extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255'
             ],
+            'user_type_id' => [
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => true,
+            ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);
 
         $this->forge->addKey('id', TRUE);
+        $this->forge->addForeignKey('user_type_id', 'user_types', 'id', 'CASCADE', 'CASCADE');
 
         $this->forge->createTable('users', TRUE);
     }

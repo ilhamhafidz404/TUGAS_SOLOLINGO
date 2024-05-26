@@ -12,7 +12,20 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Ilham Hafidz',
                 'username'  => 'xxhamz',
-                'password' => 'password'
+                'password' => 'password',
+                "user_type_id" => 1
+            ],
+            [
+                'name' => 'Ira Irwanti',
+                'username'  => 'irawan',
+                'password' => 'password',
+                "user_type_id" => 2
+            ],
+            [
+                'name' => 'admin',
+                'username'  => 'admin',
+                'password' => 'password',
+                "user_type_id" => 3
             ],
         ];
 

@@ -1545,3 +1545,39 @@ INFO - 2024-05-26 14:53:45 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-05-26 14:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-26 14:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-26 14:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-26 15:00:14 --> ErrorException: Undefined array key "slug"
+[Method: GET, Route: admin/courses/detail]
+in APPPATH\Controllers\Admin\CourseController.php on line 32.
+ 1 APPPATH\Controllers\Admin\CourseController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "slug"', 'C:\\laragon\\www\\Quiz\\app\\Controllers\\Admin\\CourseController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\CourseController->show()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CourseController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-26 15:04:59 --> ErrorException: Undefined array key "detail"
+[Method: GET, Route: admin/courses/detail]
+in APPPATH\Views\admin\DetailCourseView.php on line 21.
+ 1 APPPATH\Views\admin\DetailCourseView.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "detail"', 'C:\\laragon\\www\\Quiz\\app\\Views\\admin\\DetailCourseView.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\Quiz\\app\\Views\\admin\\DetailCourseView.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/DetailCourseView', [], true)
+ 5 APPPATH\Controllers\Admin\CourseController.php(37): view('admin/DetailCourseView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\CourseController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CourseController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-26 15:10:55 --> Error: Cannot use object of type App\Models\Course as array
+[Method: GET, Route: admin/courses/detail]
+in APPPATH\Controllers\Admin\CourseController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\CourseController->show()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CourseController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')

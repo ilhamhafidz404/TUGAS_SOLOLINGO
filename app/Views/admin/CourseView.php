@@ -37,7 +37,9 @@
                     <?= $course["created_by"] ?>
                   </td>
                   <td>
-                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#formUserDetail">Detail</a>
+                    <a href="/admin/courses/detail?slug=<?= $course['slug'] ?>" class="btn btn-info">
+                      Detail
+                    </a>
                   </td>
                 </tr>
               <?php endforeach ?>

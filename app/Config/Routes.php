@@ -15,6 +15,7 @@ $routes->get('/admin/users/delete', 'Admin\UserController::destroy', ['as' => "a
 
 $routes->get('/admin/courses', 'Admin\CourseController::index', ['as' => "admin.courses"]);
 $routes->post('/admin/courses', 'Admin\CourseController::store', ['as' => "admin.courses.store"]);
+$routes->get('/admin/courses/detail', 'Admin\CourseController::show', ['as' => "admin.courses.show"]);
 
 
 $routes->get('/teacher/dashboard', 'Teacher\DashboardController::index', ['as' => "teacher.dashboard"]);

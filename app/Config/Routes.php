@@ -17,6 +17,8 @@ $routes->get('/admin/courses', 'Admin\CourseController::index', ['as' => "admin.
 $routes->post('/admin/courses', 'Admin\CourseController::store', ['as' => "admin.courses.store"]);
 $routes->get('/admin/courses/detail', 'Admin\CourseController::show', ['as' => "admin.courses.show"]);
 
+$routes->post('/admin/questions', 'Admin\QuestionController::store', ['as' => "admin.question.store"]);
+
 
 $routes->get('/teacher/dashboard', 'Teacher\DashboardController::index', ['as' => "teacher.dashboard"]);
 

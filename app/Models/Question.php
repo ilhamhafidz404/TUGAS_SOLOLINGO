@@ -12,7 +12,7 @@ class Question extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ["question", "a", "b", "c", "d", "correct", "course_id"];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

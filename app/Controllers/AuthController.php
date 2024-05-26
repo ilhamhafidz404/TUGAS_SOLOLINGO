@@ -73,9 +73,16 @@ class AuthController extends BaseController
             'username'    => $this->request->getVar('username'),
             // 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             'password' => $this->request->getVar('password'),
-            'user_type_id' => 1,
+            'user_type_id' => $this->request->getVar('user_type') ? $this->request->getVar('user_type') : 1,
         ];
         $model->save($data);
+
+        $session = session();
+
+        if ($session->get('user_type_name') == "admin") {
+            return redirect()->to('/admin/users');
+        }
+
         return redirect()->to('/login');
     }
 

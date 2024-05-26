@@ -7,7 +7,7 @@
     <div class="section-header">
       <h1>User</h1>
       <div class="section-header-breadcrumb">
-        <button class="btn btn-primary">Tambah User</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#formUserModal">Tambah User</button>
       </div>
     </div>
 
@@ -53,5 +53,50 @@
       </div>
     </div>
   </section>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="formUserModal">
+  <div class="modal-dialog" role="document">
+    <form action="/register" method="POST">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Tambah User</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name">
+          </div>
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+          </div>
+          <div class="form-group">
+            <label>User Type</label>
+            <select class="form-control" name="user_type">
+              <option value="" hidden selected>Select User Type</option>
+              <option value="1">Student</option>
+              <option value="2">Teacher</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer bg-whitesmoke br">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 <?= $this->endSection() ?>

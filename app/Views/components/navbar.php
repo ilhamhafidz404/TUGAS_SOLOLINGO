@@ -27,7 +27,7 @@ $session = session();
     <?php else : ?>
       <ul class="navbar-nav">
         <li class="nav-item <?= ($uri = service('uri')->getSegment(2)) === 'dashboard' ? 'active' : '' ?>">
-          <a href="/admin/dashboard" class="nav-link">
+          <a href="/dashboard" class="nav-link">
             <i class="fas fa-home"></i>
             <span>Home</span>
           </a>

@@ -290,3 +290,33 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
 13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-26 07:57:39 --> ErrorException: Undefined variable $courses
+[Method: GET, Route: admin/users]
+in APPPATH\Views\admin\UserView.php on line 25.
+ 1 APPPATH\Views\admin\UserView.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $courses', 'C:\\laragon\\www\\Quiz\\app\\Views\\admin\\UserView.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\Quiz\\app\\Views\\admin\\UserView.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/UserView', [], true)
+ 5 APPPATH\Controllers\Admin\UserController.php(17): view('admin/UserView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')
+CRITICAL - 2024-05-26 07:57:47 --> ErrorException: Undefined variable $users
+[Method: GET, Route: admin/users]
+in APPPATH\Views\admin\UserView.php on line 25.
+ 1 APPPATH\Views\admin\UserView.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\Quiz\\app\\Views\\admin\\UserView.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\Quiz\\app\\Views\\admin\\UserView.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/UserView', [], true)
+ 5 APPPATH\Controllers\Admin\UserController.php(17): view('admin/UserView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\laragon\\www\\Quiz\\public\\index.php')

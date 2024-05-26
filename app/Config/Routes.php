@@ -7,7 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/dashboard', 'DashboardController::index', ['as' => "student.dashboard"]);
+
 $routes->get('/admin/dashboard', 'Admin\DashboardController::index', ['as' => "admin.dashboard"]);
+$routes->get('/admin/users', 'Admin\UserController::index', ['as' => "admin.users"]);
+
 $routes->get('/teacher/dashboard', 'Teacher\DashboardController::index', ['as' => "teacher.dashboard"]);
 
 // auth

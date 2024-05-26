@@ -21,4 +21,12 @@ class UserController extends BaseController
 
         return view("admin/UserView", $data);
     }
+
+    public function destroy()
+    {
+        $model = new User();
+        $model->where('id', (int) $_GET['id'])->delete();
+
+        return redirect()->back();
+    }
 }

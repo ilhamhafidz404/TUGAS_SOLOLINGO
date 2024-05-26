@@ -44,7 +44,9 @@
                       </div>
                     <?php endif;  ?>
                   </td>
-                  <td><a href="#" class="btn btn-info">Detail</a></td>
+                  <td>
+                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#formUserDetail<?= $user['username'] ?>">Detail</a>
+                  </td>
                 </tr>
               <?php endforeach ?>
             </table>
@@ -99,4 +101,46 @@
     </form>
   </div>
 </div>
+
+
+<?php foreach ($users as $user) : ?>
+  <div class="modal fade" tabindex="-1" role="dialog" id="formUserDetail<?= $user['username'] ?>">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detail User</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <tr>
+                <td>Name</td>
+                <td><?= $user["name"] ?></td>
+              </tr>
+              <tr>
+                <td>Username</td>
+                <td><?= $user["username"] ?></td>
+              </tr>
+              <tr>
+                <td>User Type</td>
+                <td><?= $user["user_type_name"] ?></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer bg-whitesmoke br">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <a href="/admin/users/delete?id=<?= $user['id'] ?>" class="btn btn-danger">
+            Delete User
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endforeach; ?>
 <?= $this->endSection() ?>

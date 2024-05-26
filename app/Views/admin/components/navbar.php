@@ -13,6 +13,12 @@
           <span>User</span>
         </a>
       </li>
+      <li class="nav-item <?= ($uri = service('uri')->getSegment(2)) === 'courses' ? 'active' : '' ?>">
+        <a href="/admin/courses" class="nav-link">
+          <i class="fas fa-book"></i>
+          <span>Course</span>
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

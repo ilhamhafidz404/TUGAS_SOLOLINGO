@@ -12,17 +12,22 @@ class CourseSeeder extends Seeder
             [
                 'title' => 'Mengenal Kata Kerja',
                 'slug'  => 'mengenal-kata-kerja',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum placeat quam a, minima odio ullam voluptates ex maiores delectus tempore asperiores, at cum? Eius facilis vel ut ratione odio.'
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum placeat quam a, minima odio ullam voluptates ex maiores delectus tempore asperiores, at cum? Eius facilis vel ut ratione odio.',
+                "user_id" => 2,
             ],
             [
                 'title' => 'Mengenal Kata Benda',
                 'slug' => 'mengenal-kata-benda',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum placeat quam a, minima odio ullam voluptates ex maiores delectus tempore asperiores, at cum? Eius facilis vel ut ratione odio.'
+                'description' =>
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum placeat quam a, minima odio ullam voluptates ex maiores delectus tempore asperiores, at cum? Eius facilis vel ut ratione odio.',
+                "user_id" => 2,
             ],
             [
                 'title' => 'Mengenal Kata Bantu',
                 'slug'    => 'mengenal-kata-bantu',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum placeat quam a, minima odio ullam voluptates ex maiores delectus tempore asperiores, at cum? Eius facilis vel ut ratione odio.'
+                'description' =>
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum placeat quam a, minima odio ullam voluptates ex maiores delectus tempore asperiores, at cum? Eius facilis vel ut ratione odio.',
+                "user_id" => 3,
             ]
         ];
 

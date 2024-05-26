@@ -26,13 +26,17 @@ class Courses extends Migration
             'description'      => [
                 'type'           => 'TEXT',
             ],
+            'user_id' => [
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => true,
+            ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);
 
-        // Membuat primary key
         $this->forge->addKey('id', TRUE);
+        $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');
 
-        // Membuat tabel courses
         $this->forge->createTable('courses', TRUE);
     }
 

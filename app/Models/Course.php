@@ -12,7 +12,7 @@ class Course extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["title", "slug", "description"];
+    protected $allowedFields    = ["title", "slug", "description", "user_id"];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
